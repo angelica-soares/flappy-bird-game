@@ -1,0 +1,89 @@
+/* Reset na página */
+
+@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Monofett', cursive;
+    font-weight: 500 ;
+    letter-spacing: 10px;
+    
+}
+
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #0d262d;
+    color: #fff;
+    height: 100%;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+}
+
+/* Estilo do Game */
+
+* {
+    box-sizing: border-box;
+}
+
+[tp-flappy] {
+    position: relative;
+    border: 5px solid dodgerblue;
+    height: 580px;
+    width: 1200px;
+    background-color: deepskyblue;
+    overflow: hidden;
+}
+
+.passaro {
+    position: relative;
+    width: 15%;
+    left: 45%;
+    top: 33%;
+}
+
+.par-de-barreiras {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barreira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barreira .borda  {
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #639301, #a5e82e);
+    border: 2px solid #000;
+}
+
+.barreira .corpo {
+    height: 150px;
+    width: 110px;
+    background: linear-gradient(90deg, #639301, #a5e82e);
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.progresso {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 50px;
+}
